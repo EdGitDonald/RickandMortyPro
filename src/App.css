@@ -1,1 +1,18 @@
 
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+:root{
+  --primary-bg: rgb(102, 92, 171);
+  --light-theme-btn: #430f58;
+  --dark-theme-btn: #c3195d;
+  --white: white;
+}
