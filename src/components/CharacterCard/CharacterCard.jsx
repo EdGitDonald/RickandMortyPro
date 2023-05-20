@@ -4,8 +4,8 @@ import './CharacterCard.css'
 function CharacterCard({character}) {
   return (
     <div className="character-card">
-        <img src={character.image} />
-        <p>{character.name}</p>
+        <img src={character?.image} />
+        <p>{character?.name}</p>
         <a href="#">See Details</a>
     </div>
   )
