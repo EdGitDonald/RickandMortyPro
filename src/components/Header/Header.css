@@ -8,7 +8,12 @@
     color:var(--white);
 }
 
-.theme-btn{
+.header-dark{
+    background-color: black;
+    border-bottom: solid 1px gray;
+}
+
+.theme-button{
     padding:5px 10px;
     border-radius:8px;
     border:none;
@@ -16,4 +21,8 @@
     background-color:  var(--light-theme-btn);
     color:var(--white);
     margin-left: 20px;
+}
+
+.theme-button-dark{
+    background-color: var(--dark-theme-btn);
 }

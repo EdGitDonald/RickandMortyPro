@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Episodes from './pages/Episodes/Episodes'
 import './App.css'
 import CharacterDetails from './pages/CharacterDetails/CharacterDetails'
+import ThemeContextProvider from './contexts/ThemeContext'
 
 
 
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <ThemeContextProvider>
       <Header />
 
       <Routes>
@@ -26,6 +28,7 @@ function App() {
       </Routes>
 
       <Footer />
+      </ThemeContextProvider>
     </BrowserRouter>
   )
 }
