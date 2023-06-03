@@ -8,6 +8,8 @@ import Episodes from './pages/Episodes/Episodes'
 import './App.css'
 import CharacterDetails from './pages/CharacterDetails/CharacterDetails'
 import ThemeContextProvider from './contexts/ThemeContext'
+import Favorites from './pages/Favorites/Favorites'
+import FavoritesContextProvider from './contexts/FavoritesContext'
 
 
 
@@ -17,17 +19,20 @@ function App() {
 
   return (
     <BrowserRouter>
-    <ThemeContextProvider>
-      <Header />
+      <ThemeContextProvider>
+       <FavoritesContextProvider>
+        <Header />
 
-      <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/details/:characterId' element={<CharacterDetails />} />
-        <Route path='/episodes' element={<Episodes />} />
-      </Routes>
+          <Routes>
+            <Route path='/' element={<Homepage />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/favorites' element={<Favorites />} />
+            <Route path='/details/:characterId' element={<CharacterDetails />} />
+            <Route path='/episodes' element={<Episodes />} />
+          </Routes>
 
-      <Footer />
+        <Footer />
+       </FavoritesContextProvider>
       </ThemeContextProvider>
     </BrowserRouter>
   )

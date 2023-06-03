@@ -11,6 +11,7 @@
     -webkit-box-shadow: 7px 8px 13px -4px rgba(0,0,0,0.47);
     -moz-box-shadow: 7px 8px 13px -4px rgba(0,0,0,0.47);
     background-color: white;
+    position: relative;
 }
 
 .character-card img{
@@ -29,4 +30,14 @@
     color:white;
     cursor:pointer;
 }
+
+.heart-icon{
+    color:var(--primary-bg);
+    font-size:20px;
+    cursor:pointer;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+  } 
 
